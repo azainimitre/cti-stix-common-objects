@@ -1,0 +1,197 @@
+{
+    "type": "bundle",
+    "id": "bundle--c34145d7-e6da-480e-98a2-f4f552abb94e",
+    "objects": [
+        {
+            "x_comment": "g.72.A",
+            "type": "task",
+            "id": "task--4e1e2a5a-6b3c-4d5e-8f6a-9e7b8a9a5b6c",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "spec_version": "2.1",
+            "outcome": "successful",
+            "changed_objects": [
+                {
+                    "state_change": {
+                        "state_change_type": "mitigated",
+                        "initial_ref": "impact--f3e1a6f3-1a95-457a-84a7-887c2d9e5e7c",
+                        "result_ref": "impact--c1f2d3e4-5b6c-7a8d-9e0a-1b2c3d4e5f6g"
+                    }
+                }
+            ],
+            "description": "Mitigated the impact of the phishing attack.",
+            "end_time": "2023-11-22T16:30:00.000Z",
+            "end_time_fidelity": "minute",
+            "task_types": [
+                "information-owners"
+            ],
+            "name": "Mitigation Task",
+            "priority": 80,
+            "start_time": "2023-11-22T15:30:00.000Z",
+            "start_time_fidelity": "minute",
+            "extensions": {
+                "extension-definition--2074a052-8be4-4932-849e-f5e7798e0030": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "x_comment": "g.72.A.1",
+            "type": "identity",
+            "id": "identity--b0e7e6a5-6e2c-4a0b-8d5a-8a5e92a5a5bc",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "name": "John Doe",
+            "identity_class": "individual"
+        },
+        {
+            "x_comment": "g.72.A.5.a",
+            "type": "identity",
+            "id": "identity--c1d2e3f4-5b6c-7d8e-9f0a-1b2c3d4e5f6g",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "name": "Federal Communications Commission",
+            "identity_class": "organization"
+        },
+        {
+            "x_comment": "g.72.A",
+            "type": "relationship",
+            "id": "relationship--a2b3c4d5-e6f7-89a0-b1c2-d3e4f5a6b7c8",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "relationship_type": "notified-of",
+            "source_ref": "identity--b0e7e6a5-6e2c-4a0b-8d5a-8a5e92a5a5bc",
+            "target_ref": "incident--b0e7e6a5-6e2c-4a0b-8d5a-8a5e92a5a5bc",
+            "description": "The individual was notified of the incident."
+        },
+        {
+            "x_comment": "g.72.A.5.a",
+            "type": "relationship",
+            "id": "relationship--b2c3d4e5-f6a7-89b0-c1d2-e3f4a5b6c7d8",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "relationship_type": "employed-by",
+            "source_ref": "identity--b0e7e6a5-6e2c-4a0b-8d5a-8a5e92a5a5bc",
+            "target_ref": "identity--c1d2e3f4-5b6c-7d8e-9f0a-1b2c3d4e5f6g",
+            "description": "The individual is employed by the Federal Communications Commission."
+        },
+        {
+            "x_comment": "g.72.B",
+            "type": "task",
+            "id": "task--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "spec_version": "2.1",
+            "task_types": [
+                "inspector-general"
+            ],
+            "name": "Inspector General Task"
+        },
+        {
+            "x_comment": "g.72.E",
+            "type": "task",
+            "id": "task--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "spec_version": "2.1",
+            "task_types": [
+                "regulatory-agency"
+            ],
+            "name": "Regulatory Agency Task"
+        },
+        {
+            "x_comment": "g.72.G",
+            "type": "task",
+            "id": "task--c1d2e3f4-5g6a-7b8c-9d0e-1f2a3b4c5d6f",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "spec_version": "2.1",
+            "task_types": [
+                "security-staff"
+            ],
+            "name": "Security Staff Task"
+        },
+        {
+            "x_comment": "g.74",
+            "type": "task",
+            "id": "task--d1e2f3g4-5h6i-7j8k-9l0m-1n2o3p4q5r6s",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "spec_version": "2.1",
+            "task_types": [
+                "report-to-congress"
+            ],
+            "name": "Report to Congress Task",
+            "outcome": "successful",
+            "start_time": "2023-11-22T15:30:00.000Z",
+            "end_time": "2023-11-22T16:30:00.000Z",
+            "description": "TimeZone: GMT"
+        },
+        {
+            "x_comment": "g.74.A.2",
+            "type": "identity",
+            "id": "identity--d2e3f4g5-6h7i-8j9k-0l1m-2n3o4p5q6r7s",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "name": "House Committee on Energy and Commerce",
+            "identity_class": "organization"
+        },
+        {
+            "x_comment": "g.74.A.2",
+            "type": "relationship",
+            "id": "relationship--e2f3g4h5-6i7j-8k9l-0m1n-2o3p4q5r6s7t",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "relationship_type": "reported-to",
+            "source_ref": "task--d1e2f3g4-5h6i-7j8k-9l0m-1n2o3p4q5r6s",
+            "target_ref": "identity--d2e3f4g5-6h7i-8j9k-0l1m-2n3o4p5q6r7s",
+            "description": "The task reported to the House Committee on Energy and Commerce."
+        },
+        {
+            "x_comment": "g.74.A.2.a.1",
+            "type": "identity",
+            "id": "identity--e2f3g4h5-6i7j-8k9l-0m1n-2o3p4q5r6s7t",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "name": "Subcommittee on Communications and Technology",
+            "identity_class": "organization"
+        },
+        {
+            "x_comment": "g.74.A.2.a.1.i",
+            "type": "identity",
+            "id": "identity--f2g3h4i5-6j7k-8l9m-0n1o-2p3q4r5s6t7u",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "name": "Jane Smith",
+            "identity_class": "individual",
+            "description": "Congressional Point of Contact",
+            "extensions": {
+                "contact_information": {
+                    "ContactNumber": [
+                        {
+                            "number": "1234567890",
+                            "classified": false
+                        }
+                    ],
+                    "EmailContact": [
+                        {
+                            "email": "jane.smith@example.com",
+                            "classified": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "x_comment": "g.74.A.2.a.1.i",
+            "type": "relationship",
+            "id": "relationship--g2h3i4j5-6k7l-8m9n-0o1p-2q3r4s5t6u7v",
+            "created": "2023-11-22T15:30:00.000Z",
+            "modified": "2023-11-22T15:30:00.000Z",
+            "relationship_type": "contact-for",
+            "source_ref": "identity--f2g3h4i5-6j7k-8l9m-0n1o-2p3q4r5s6t7u",
+            "target_ref": "identity--e2f3g4h5-6i7j-8k9l-0m1n-2o3p4q5r6s7t",
+            "description": "Jane Smith is a point of contact for the Subcommittee on Communications and Technology."
+        }
+    ]
+}
